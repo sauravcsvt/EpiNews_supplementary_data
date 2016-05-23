@@ -61,7 +61,7 @@ period of 1 week.
 
 ## Topic Distributions
 
-The first component of 'EpiNews' is a supervised topic model which extracts
+The first component of 'EpiNews' is a supervised temporal topic model which extracts
 latent disease topics and their associated temporal trends of prominence from
 the set of tuple collections. The temporal topic trends (along with the sampled 
 case counts generated via multinomial sampling) for the diseases were provided 
@@ -71,5 +71,17 @@ corresponding to each time point T within the evaluation period.
 * [Topic distributions China](./data/China/topic_distributions/)
 * [Topic distributions India](./data/India/topic_distributions/)
 
+## Actual and estimated case counts
+
+The second component of 'EpiNews', referred to as 'EpiNews-ARNet', is responsible
+for generating estimates of case counts for each time point T within the 
+evaluation period using past case counts available from t=0 to t=T-1 and values of 
+temporal topic trends available from t=0 to t=T. The case count estimates of 'EpiNews-ARNet' 
+(along with the baseline methods) and the actual case counts (obtained from official reports) 
+were provided for each time point T within the evaluation period.
+
+* [Case counts U.S.](./data/US/case_counts/)
+* [Case counts China](./data/China/case_counts/)
+* [Case counts India](./data/India/case_counts/)
 
 
