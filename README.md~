@@ -1,17 +1,17 @@
 # EpiNews_supplementary_data
 
-Supplementary dataset associated with the manuscript 'Temporal Topic
+Supplementary dataset associated with the manuscript \textit{Temporal Topic
 Modeling to Assess Associations between News Trends and Infectious Disease
-Outbreaks'. In this manuscript, we introduce 'EpiNews', a generic
+Outbreaks}. In this manuscript, we introduce \textit{EpiNews}, a generic
 temporal framework that combines supervised temporal topic models with
 time-series regression techniques to monitor and estimate time-varying
-incidence of multiple diseases. We validated 'EpiNews' against official 
+incidence of multiple diseases. We validated \textit{EpiNews} against official 
 disease case count reports, as available from public healh agencies, in U.S.,
-China and India. We evaluated 'EpiNews' on multiple 
+China and India. We evaluated \textit{EpiNews} on multiple 
 disease outbreaks in the recent past, such as whooping cough in U.S. (2012),
 periodic outbreaks of avian influenza A (H7N9) and hand, foot, and mouth disease (HFMD) 
 in China (2013 and 2014), dengue outbreaks in China (2014) and India (2013). Given below 
-are the diseases for which we evaluated 'EpiNews' for U.S., China and India.
+are the diseases for which we evaluated \textit{EpiNews} for U.S., China and India.
 
 1. U.S. - whooping cough, rabies, salmonellosis and E. coli Infection. Time
    period of study: January 2010 to December 2013. Evaluation period for
@@ -28,7 +28,7 @@ are the diseases for which we evaluated 'EpiNews' for U.S., China and India.
    disease incidence estimation- April 2013 to December 2014. OOfficial disease case counts obtained
    from Integrated Disease Surveillance Programme (http://www.idsp.nic.in/).
 
-Raw HealthMap data
+\textbf{Raw HealthMap data}
 
 We obtained a corpus of disease-related news articles from HealthMap for each of the 3
 countries - U.S., China and India. The corpus contains articles related to the
