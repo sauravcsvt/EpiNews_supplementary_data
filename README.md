@@ -25,7 +25,7 @@ are the diseases for which we evaluated 'EpiNews' for U.S., China and India.
 
 3. India - acute diarrheal disease (ADD), dengue, malaria. Time period of
    study: January 2013 to December 2014. Evaluation period for
-   disease incidence estimation- April 2013 to December 2014. OOfficial disease case counts obtained
+   disease incidence estimation- April 2013 to December 2014. Official disease case counts obtained
    from Integrated Disease Surveillance Programme (http://www.idsp.nic.in/).
 
 Raw HealthMap data
@@ -34,6 +34,6 @@ We obtained a corpus of disease-related news articles from HealthMap for each of
 countries - U.S., China and India. The corpus contains articles related to the
 diseases of interest for each country. The raw HealthMap corpus corresponding
 to U.S., China and India can be found in
-{https://github.com/sauravcsvt/EpiNews_supplementary_data/tree/master/data/US/raw_HealthMap},
-{https://github.com/sauravcsvt/EpiNews_supplementary_data/tree/master/data/China/raw_HealthMap} and
-{https://github.com/sauravcsvt/EpiNews_supplementary_data/tree/master/data/India/raw_HealthMap}.
+https://github.com/sauravcsvt/EpiNews_supplementary_data/tree/master/data/US/raw_HealthMap,
+https://github.com/sauravcsvt/EpiNews_supplementary_data/tree/master/data/China/raw_HealthMap and
+https://github.com/sauravcsvt/EpiNews_supplementary_data/tree/master/data/India/raw_HealthMap.
