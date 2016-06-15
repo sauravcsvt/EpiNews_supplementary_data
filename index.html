@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Epinews supplementary data by sauravcsvt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Epinews supplementary data</h1>
+      <h2 class="project-tagline">This is the repository for the EpiNews paper communicated to Nature Scientific Reports.</h2>
+      <a href="https://github.com/sauravcsvt/EpiNews_supplementary_data" class="btn">View on GitHub</a>
+      <a href="https://github.com/sauravcsvt/EpiNews_supplementary_data/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/sauravcsvt/EpiNews_supplementary_data/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="epinews_supplementary_data" class="anchor" href="#epinews_supplementary_data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EpiNews_supplementary_data</h1>
+
+<p>Supplementary dataset associated with the manuscript 'Temporal Topic
+Modeling to Assess Associations between News Trends and Infectious Disease
+Outbreaks'. In this manuscript, we introduce 'EpiNews', a generic
+temporal framework that combines supervised temporal topic models with
+time-series regression techniques to monitor and estimate time-varying
+incidence of multiple diseases. We validated 'EpiNews' against official 
+disease case count reports, as available from public healh agencies, in U.S.,
+China and India. We evaluated 'EpiNews' on multiple 
+disease outbreaks in the recent past, such as whooping cough in U.S. (2012),
+periodic outbreaks of avian influenza A (H7N9) and hand, foot, and mouth disease (HFMD) 
+in China (2013 and 2014), dengue outbreaks in China (2014) and India (2013). Given below 
+are the diseases for which we evaluated 'EpiNews' for U.S., China and India.</p>
+
+<ul>
+<li><p>U.S. - whooping cough, rabies, salmonellosis and E. coli Infection. Time
+period of study: January 2010 to December 2013. Evaluation period for
+disease incidence estimation- January 2012 to December 2013. Official disease case counts
+obtained from Project Tycho (<a href="https://www.tycho.pitt.edu/">https://www.tycho.pitt.edu/</a>).</p></li>
+<li><p>China - H7N9, HFMD and dengue. Time period of study: January 2013 to
+December 2014. Evaluation period for
+disease incidence estimation- December 2013 to December 2014. Official disease case counts obtained from National Health
+and Family Planning Commission (<a href="http://en.nhfpc.gov.cn/">http://en.nhfpc.gov.cn/</a>).</p></li>
+<li><p>India - acute diarrheal disease (ADD), dengue, malaria. Time period of
+study: January 2013 to December 2014. Evaluation period for
+disease incidence estimation- April 2013 to December 2014. Official disease case counts obtained
+from Integrated Disease Surveillance Programme (<a href="http://www.idsp.nic.in/">http://www.idsp.nic.in/</a>).</p></li>
+</ul>
+
+<h2>
+<a id="raw-healthmap-data" class="anchor" href="#raw-healthmap-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Raw HealthMap data</h2>
+
+<p>We obtained a corpus of disease-related news articles from HealthMap for each of the 3
+countries - U.S., China and India. For each country, the corpus contains articles related to the
+diseases mentioned above.</p>
+
+<ul>
+<li><a href="./data/US/raw_HealthMap/">Raw HealthMap U.S.</a></li>
+<li><a href="./data/China/raw_HealthMap/">Raw HealthMap China</a></li>
+<li><a href="./data/India/raw_HealthMap/">Raw HealthMap India</a></li>
+</ul>
+
+<h2>
+<a id="processed-healthmap-data" class="anchor" href="#processed-healthmap-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Processed HealthMap data</h2>
+
+<p>The corpus for each country was preprocessed and transformed to a collection of
+tuples of the form {w,l,t}: count where count is the number of news articles
+mentioning the word w referring to location l at time point t. For each
+country, the sets of such tuples were provided corresponding to each time point T within the
+evaluation period. E.g., for China, the file 'tuple collection-2014-02-01.csv' contains the
+set of tuples from t=0 ('2013-01-01') to t=T where T='2014-02-01'.
+T='2014-02-01' refers to the month of February 2014. The tuple "('h7n9',
+('China', u'Shandong'), '2013-04-01')",1 means that the word 'h7n9' was
+mentioned in 1 article referring to the province of Shandong in China over the
+month of April 2013. Similar definition applies to the set of tuple collections
+obtained for U.S. and India except the fact that each time point t represents a
+period of 1 week.</p>
+
+<ul>
+<li><a href="./data/US/processed_HealthMap/">Processed HealthMap U.S.</a></li>
+<li><a href="./data/China/processed_HealthMap/">Processed HealthMap China</a></li>
+<li><a href="./data/India/processed_HealthMap/">Processed HealthMap India</a></li>
+</ul>
+
+<h2>
+<a id="topic-distributions" class="anchor" href="#topic-distributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Topic Distributions</h2>
+
+<p>The first component of 'EpiNews' is a supervised temporal topic model which extracts
+latent disease topics and their associated temporal trends of prominence from
+the set of tuple collections. The temporal topic trends (along with the sampled 
+case counts generated via multinomial sampling) for the diseases were provided 
+corresponding to each time point T within the evaluation period. </p>
+
+<ul>
+<li><a href="./data/US/topic_distributions/">Topic distributions U.S.</a></li>
+<li><a href="./data/China/topic_distributions/">Topic distributions China</a></li>
+<li><a href="./data/India/topic_distributions/">Topic distributions India</a></li>
+</ul>
+
+<h2>
+<a id="actual-and-estimated-case-counts" class="anchor" href="#actual-and-estimated-case-counts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Actual and estimated case counts</h2>
+
+<p>The second component of 'EpiNews', referred to as 'EpiNews-ARNet', is responsible
+for generating estimates of case counts for each time point T within the 
+evaluation period using past case counts available from t=0 to t=T-1 and values of 
+temporal topic trends available from t=0 to t=T. The case count estimates of 'EpiNews-ARNet' 
+(along with the baseline methods) and the actual case counts (obtained from official reports) 
+were provided for each time point T within the evaluation period.</p>
+
+<ul>
+<li><a href="./data/US/case_counts/">Case counts U.S.</a></li>
+<li><a href="./data/China/case_counts/">Case counts China</a></li>
+<li><a href="./data/India/case_counts/">Case counts India</a></li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/sauravcsvt/EpiNews_supplementary_data">Epinews supplementary data</a> is maintained by <a href="https://github.com/sauravcsvt">sauravcsvt</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
