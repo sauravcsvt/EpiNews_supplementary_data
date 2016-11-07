@@ -34,9 +34,9 @@ We obtained a corpus of disease-related news articles from HealthMap for each of
 countries - U.S., China and India. For each country, the corpus contains articles related to the
 diseases mentioned above.
 
-* [Raw HealthMap U.S.](./data/US/raw_HealthMap/)
-* [Raw HealthMap China](./data/China/raw_HealthMap/)
-* [Raw HealthMap India](./data/India/raw_HealthMap/)
+* [Raw HealthMap U.S.](./data/US/HealthMap_corpus/)
+* [Raw HealthMap China](./data/China/HealthMap_corpus/)
+* [Raw HealthMap India](./data/India/HealthMap_corpus/)
 
 ## Processed HealthMap data
 
