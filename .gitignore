@@ -61,3 +61,7 @@ target/
 #Ipython Notebook
 .ipynb
 .ipynb_checkpoints
+./data/China/HealthMap_corpus/
+./data/India/HealthMap_corpus/
+./data/US/HealthMap_corpus/
+

@@ -28,19 +28,10 @@ are the diseases for which we evaluated 'EpiNews' for U.S., China and India.
    disease incidence estimation- April 2013 to December 2014. Official disease case counts obtained
    from Integrated Disease Surveillance Programme (http://www.idsp.nic.in/).
 
-## Raw HealthMap data
-
-We obtained a corpus of disease-related news articles from HealthMap for each of the 3
-countries - U.S., China and India. For each country, the corpus contains articles related to the
-diseases mentioned above.
-
-* [Raw HealthMap U.S.](./data/US/HealthMap_corpus/)
-* [Raw HealthMap China](./data/China/HealthMap_corpus/)
-* [Raw HealthMap India](./data/India/HealthMap_corpus/)
 
 ## Processed HealthMap data
 
-The corpus for each country was preprocessed and transformed to a collection of
+The HealthMap news corpus for each country was preprocessed and transformed to a collection of
 tuples of the form {w,l,t}: count where count is the number of news articles
 mentioning the word w referring to location l at time point t. For each
 country, the sets of such tuples were provided corresponding to each time point T within the
