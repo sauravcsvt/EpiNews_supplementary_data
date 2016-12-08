@@ -2,7 +2,7 @@
 
 Supplementary dataset associated with the manuscript 'Temporal Topic
 Modeling to Assess Associations between News Trends and Infectious Disease
-Outbreaks'. In this manuscript, we introduce 'EpiNews', a generic
+Outbreaks' accepted in Nature Scientific Reports. In this manuscript, we introduce 'EpiNews', a generic
 temporal framework that combines supervised temporal topic models with
 time-series regression techniques to monitor and estimate time-varying
 incidence of multiple diseases. We validated 'EpiNews' against official 
